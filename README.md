@@ -24,5 +24,3 @@ git clone https://github.com/baozuo605/baozuo605.git
 # 安装依赖
 npm install
 
-# 启动开发服务器
-hugo server -D
