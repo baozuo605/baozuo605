@@ -6,6 +6,7 @@
 [![Build Status](https://img.shields.io/github/actions/workflow/status/baozuo605/baozuo605/deploy.yml?branch=main&style=flat-square)](https://github.com/baozuo605/baozuo605/actions/workflows/deploy.yml)
 [![Hugo Version](https://img.shields.io/badge/Hugo-0.110.0-blue?style=flat-square&logo=hugo)](https://gohugo.io)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](http://makeapullrequest.com)
+[![Code Style](https://img.shields.io/badge/code%20style-prettier-ff69b4.svg?style=flat-square)](https://prettier.io)
 
 > 记录技术成长 | 分享开发经验 | 构建知识体系
 
@@ -24,6 +25,7 @@
 - 🔗 自动链接检查 (CI集成)
 - 🛡️ CSP 安全策略
 - 📈 性能监控 (Lighthouse CI)
+- 🧹 自动格式化 (Prettier + Markdownlint)
 
 ## 🚀 快速开始
 ### 系统要求
@@ -61,28 +63,3 @@ hugo \
 ```
 
 ## 📂 项目结构
-```
-.
-├── archetypes/       # 文章模板 (支持多种内容类型)
-├── assets/           # 静态资源 (SCSS/JS编译)
-├── content/          # 文章内容 (多语言支持)
-├── data/             # 数据文件 (JSON/YAML/TOML)
-├── i18n/             # 国际化文件
-├── layouts/          # 布局文件 (覆盖主题)
-├── public/           # 构建输出
-├── static/           # 静态文件 (直接复制)
-├── themes/           # 主题目录 (git submodule)
-├── .github/          # GitHub配置
-├── netlify.toml      # Netlify配置
-├── config.toml       # 主配置文件
-├── package.json      # 前端依赖
-├── .markdownlintrc   # Markdown规范
-└── .prettierrc       # 代码格式化配置
-```
-
-## 🧑‍💻 写作指南
-1. 创建新文章:
-```bash
-hugo new posts/your-post/index.md
-```
-2. 推荐Front Matter配置:
